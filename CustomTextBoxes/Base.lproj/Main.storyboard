@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="CustomTextBoxes" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Open Date Picker On Click (Start)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5wW-nE-eDc">
+                                <rect key="frame" x="8" y="28" width="359" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="D55-3W-bYU"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="nUM-tX-W2l" customClass="OpenDatePicker" customModule="CustomTextBoxes" customModuleProvider="target">
+                                <rect key="frame" x="8" y="57" width="359" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="Mik-qD-h4j"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Open Date Picker On Click (End)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZcG-c6-cEx">
+                                <rect key="frame" x="8" y="106" width="359" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="wjV-1a-ape"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="JVa-dQ-P3v" customClass="OpenDatePicker" customModule="CustomTextBoxes" customModuleProvider="target">
+                                <rect key="frame" x="8" y="135" width="359" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="hyc-Ei-dsB"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Unable to perform paste action" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="A1W-rD-9KG">
+                                <rect key="frame" x="8" y="173" width="359" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="m55-bD-YWb" customClass="ChangeLongPressMenu" customModule="CustomTextBoxes" customModuleProvider="target">
+                                <rect key="frame" x="8" y="202" width="359" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="ZcG-c6-cEx" firstAttribute="leading" secondItem="nUM-tX-W2l" secondAttribute="leading" id="34q-D8-Gsg"/>
+                            <constraint firstItem="nUM-tX-W2l" firstAttribute="top" secondItem="5wW-nE-eDc" secondAttribute="bottom" constant="8" id="4ms-ib-GoC"/>
+                            <constraint firstItem="m55-bD-YWb" firstAttribute="trailing" secondItem="A1W-rD-9KG" secondAttribute="trailing" id="998-X2-ahH"/>
+                            <constraint firstItem="ZcG-c6-cEx" firstAttribute="trailing" secondItem="JVa-dQ-P3v" secondAttribute="trailing" id="Gmu-hL-H6g"/>
+                            <constraint firstAttribute="trailing" secondItem="nUM-tX-W2l" secondAttribute="trailing" constant="8" id="IYW-00-Khe"/>
+                            <constraint firstAttribute="trailing" secondItem="5wW-nE-eDc" secondAttribute="trailing" constant="8" id="Ji0-UG-ds1"/>
+                            <constraint firstItem="JVa-dQ-P3v" firstAttribute="top" secondItem="ZcG-c6-cEx" secondAttribute="bottom" constant="8" id="KEP-CW-rhl"/>
+                            <constraint firstItem="nUM-tX-W2l" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="8" id="OYA-CF-fd8"/>
+                            <constraint firstItem="A1W-rD-9KG" firstAttribute="top" secondItem="JVa-dQ-P3v" secondAttribute="bottom" constant="8" symbolic="YES" id="Roy-6S-aZG"/>
+                            <constraint firstItem="m55-bD-YWb" firstAttribute="top" secondItem="A1W-rD-9KG" secondAttribute="bottom" constant="8" symbolic="YES" id="V4z-ee-5bD"/>
+                            <constraint firstItem="5wW-nE-eDc" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="8" id="Ymv-46-TnI"/>
+                            <constraint firstItem="ZcG-c6-cEx" firstAttribute="top" secondItem="nUM-tX-W2l" secondAttribute="bottom" constant="19" id="bui-CS-JIh"/>
+                            <constraint firstItem="ZcG-c6-cEx" firstAttribute="leading" secondItem="JVa-dQ-P3v" secondAttribute="leading" id="dVt-C0-bzd"/>
+                            <constraint firstItem="A1W-rD-9KG" firstAttribute="leading" secondItem="JVa-dQ-P3v" secondAttribute="leading" id="hZh-SP-Ghg"/>
+                            <constraint firstItem="A1W-rD-9KG" firstAttribute="trailing" secondItem="JVa-dQ-P3v" secondAttribute="trailing" id="jMx-W5-pgQ"/>
+                            <constraint firstItem="m55-bD-YWb" firstAttribute="leading" secondItem="A1W-rD-9KG" secondAttribute="leading" id="uzt-m5-pS4"/>
+                            <constraint firstItem="5wW-nE-eDc" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" id="xsb-9x-bXH"/>
+                            <constraint firstItem="ZcG-c6-cEx" firstAttribute="trailing" secondItem="nUM-tX-W2l" secondAttribute="trailing" id="z9B-br-dyc"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="txtStartdate" destination="nUM-tX-W2l" id="MK2-Gx-3mv"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-135.19999999999999" y="115.59220389805098"/>
+        </scene>
+    </scenes>
+</document>
